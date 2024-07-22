@@ -17,7 +17,7 @@ Array<string>
 //타입 정의
 function add3(x:number, y:number):number
 //함수 선언
-function add3(x,y){
+function add3(x:number,y:number){
     return x+y;
 }
 add3(4,5)
