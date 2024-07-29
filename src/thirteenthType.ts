@@ -1,4 +1,4 @@
-// Custom Type Guard (is)
+// 13. Custom Type Guard (is)
 
 interface Cat {
   meow: number;
