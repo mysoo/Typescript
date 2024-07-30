@@ -30,15 +30,15 @@ obj16 = { a: "hello" };
 // add(1, "2");
 
 // T 제한하기
-function add<T extends string | number>(x: T): T {
+function add16<T extends string | number>(x: T): T {
   return x;
 }
-add(1);
+add16(1);
 
-function add2<T extends string[]>(x: T): T {
+function add17<T extends string[]>(x: T): T {
   return x;
 }
-add2(["1", "2", "3"]);
+add17(["1", "2", "3"]);
 // <T extends {...}> // 특정 객체
 // <T extends any[]> // 모든 배열
 // <T extends (...args: any) => any> // 모든 함수 => 모든 함수를 넣고 싶을 경우 any 사용
