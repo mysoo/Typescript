@@ -51,6 +51,7 @@ const filtered = [1, 2, 3, 4, 5].filter((value) => value % 2);
 const filtered2 = ["1", 2, "3", 4, "5"].filter(
   (value) => typeof value === "string"
 ); // ['1','3','5'] string[]. 강의에서 filtered2 타입을 (string|number)[]로 추론해서 잘 추론하지 못하는 것으로 나오는데, 내 코드에서는 string[]으로 잘 추론함. (4분 7초 강의) 그 이유는?
+// ts 업데이트되면서 잘 추론하게 됨. 4.xx 버전 사용할 경우 강의처럼 잘 추론하지 못함.
 
 //첫번째 filter 제네릭은 S이기 때문에 변경될 가능성이 있는데, 두번째 filter 제네릭은 변경될 가능성이 없음. 따라서 두번째 제네릭은 타입을 제대로 추론해줄 수 없기에 첫번째 제네릭이 가능성이 있음.
 const predicate = (value: string | number): value is string =>
