@@ -1,4 +1,4 @@
-// 5. 완전 복잡한 타입 분석하기(Promise와 Awaited 편)
+// 6. 완전 복잡한 타입 분석하기(Promise와 Awaited 편)
 
 const p1 = Promise.resolve(1)
   .then((a) => a + 1)
