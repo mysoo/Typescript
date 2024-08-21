@@ -11,10 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "jquery": "^3.7.1",
     "lite-server": "^2.6.1",
+    "redux": "^5.0.1",
     "typescipt": "^1.0.0"
   },
   "devDependencies": {
+    "@types/jquery": "^3.5.30",
     "@typescript-eslint/eslint-plugin": "^7.18.0",
     "@typescript-eslint/parser": "^7.18.0",
     "eslint": "^8.57.0",
