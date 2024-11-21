@@ -57,4 +57,6 @@ const aa5: A5 = new A5("123", 456, true); //여기서 A5는 클래스가 아닌 
 //Utility Type 중 LowerCase(모두 소문자)
 //LowerCase의 intrinsic: 타입스크립트 코드로 구현이 불가하여 따로 처리해두었다는 뜻
 const aaa5 = "Hello World";
-const bbb5: Lowercase<typeof aaa5> = aaa5.toLowerCase(); //error 발생?
+const bbb5: Lowercase<typeof aaa5> = aaa5.toLowerCase() as Lowercase<
+  typeof aaa5
+>; //error 발생?
